@@ -1,0 +1,7 @@
+﻿[*.cs]
+
+# S2486: Generic exceptions should not be ignored
+dotnet_diagnostic.S2486.severity = none
+
+# Default severity for all analyzer diagnostics
+dotnet_analyzer_diagnostic.severity = none

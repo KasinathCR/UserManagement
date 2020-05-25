@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200524094855_UserTableCreation.cs" />
+    <Compile Remove="Migrations\20200524094855_UserTableCreation.Designer.cs" />
+    <Compile Remove="Migrations\20200525020517_UsersTableCreation.cs" />
+    <Compile Remove="Migrations\20200525020517_UsersTableCreation.Designer.cs" />
+    <Compile Remove="Migrations\20200525020811_UsersTableCreation.cs" />
+    <Compile Remove="Migrations\20200525020811_UsersTableCreation.Designer.cs" />
+    <Compile Remove="Migrations\20200525021630_UsersTableCreation.cs" />
+    <Compile Remove="Migrations\20200525021630_UsersTableCreation.Designer.cs" />
+    <Compile Remove="Migrations\20200525025139_UsersTableCreation.cs" />
+    <Compile Remove="Migrations\20200525025139_UsersTableCreation.Designer.cs" />
+    <Compile Remove="Migrations\20200525044334_UsersTableCreation.cs" />
+    <Compile Remove="Migrations\20200525044334_UsersTableCreation.Designer.cs" />
+    <Compile Remove="Migrations\20200525045300_UsersTableCreation.cs" />
+    <Compile Remove="Migrations\20200525045300_UsersTableCreation.Designer.cs" />
+    <Compile Remove="Migrations\20200525045342_UsersTableCreation.cs" />
+    <Compile Remove="Migrations\20200525045342_UsersTableCreation.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="3.1.4" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\User.Models\User.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
+</Project>
